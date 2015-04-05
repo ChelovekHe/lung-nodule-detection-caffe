@@ -1,0 +1,16 @@
+#net: "models/bvlc_reference_caffenet/train_val.prototxt"
+# 1 epoch ~ 132 iters
+# 5 epoch ~ 657 iters
+# 10 chechpoints ~ 
+net: "vgg16.prototxt"
+test_iter: 15
+test_interval: 66
+base_lr: 0.01
+lr_policy: "fixed"
+display: 1
+max_iter: 660
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 132
+snapshot_prefix: "vgg16"
+solver_mode: CPU
